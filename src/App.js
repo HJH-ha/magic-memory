@@ -1,4 +1,4 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import SingleCard from "./components/SingleCard";
 
@@ -58,7 +58,7 @@ function App() {
       }
     }
   }, [choiceOne, choiceTwo]);
-  // useEffect(()=>[])   << 처음 시작시 한번 실행
+
   useEffect(() => {
     shuffleCards();
   }, []);
